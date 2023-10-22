@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Socsil</title>
+		<link rel="stylesheet" type="text/css" href="socsil.css">
+	</head>
+	<body>
+    
+        <button class="toggle-sidebar-btn" id="toggleBtn">
+            <div class="icon" id="icon">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <span class="tooltip">サイドバーを開く</span>
+        </button>
+        <div class="sidebar" id="sidebar">
+            <h2>Search History</h2>
+			<div id="searchHistory">
+				<!-- 検索履歴アイテムはJavaScriptを使用してここに追加されます -->
+            </div>
+            <div id="tips">
+                <h3>Tips</h3>
+                主な組み合わせ how+where 行き方
+            </div>
+        </div>
+		</div>
+		<button id="toggleSearchHistory">
+	    	<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</button>
+		<div class="centered-container">
+			<img src="socsil_scan.png" class="icon-image">
+		</div>
+        <div class="centered-container">
+            <div class="container">
+                <input required="" type="text" id="searchInput" name="text" class="input">
+                <label class="label">Enter search term</label>
+            </div>
+        </div>
+
+		
+		
+		<div id="toggle-container">
+			<div id="what" class="toggle"><b>What</b></div>
+			<div id="when" class="toggle"><b>When</b></div>
+			<div id="where" class="toggle"><b>Where</b></div>
+			<div id="who" class="toggle"><b>Who</b></div>
+			<div id="why" class="toggle"><b>Why</b></div>
+			<div id="how" class="toggle"><b>How</b></div>
+		</div>
+
+        <div class="centered-container">
+			<button id="searchButton">Search</button>
+		</div>
+
+		<div id="results-container">
+		</div>
+
+   
+		
+		<script src="script.js"></script>
+	</body>
+</html>
